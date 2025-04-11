@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
         background: #fff; padding: 20px; border-radius: 10px; text-align: center;
         box-shadow: 0 0 15px rgba(0,0,0,0.3); z-index: 9999;">
-          <p style="color: green; font-weight: bold;">Under 5 hours UC send kar diya jayega ID par</p>
+          <p style="color: green; font-weight: bold;">UC will be sent to your ID within 5 hours.</p>
         </div>`;
       document.body.appendChild(finalPopup);
       setTimeout(() => {
