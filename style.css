@@ -75,3 +75,8 @@ button.completed {
   color: white;
   border: none;
 }
+#downloadBtn.completed {
+  background-color: green;
+  color: white;
+  border: none;
+}
