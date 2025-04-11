@@ -49,3 +49,9 @@ function showPopup(text, callback) {
     if (callback) callback();
   };
 }
+// ✅ Step 3: Submit button turns green when clicked (if Step 1 & 2 completed)
+document.getElementById("submitBtn").addEventListener("click", function () {
+  if (step1Completed && step2Completed) {
+    this.classList.add("completed");
+  }
+});
