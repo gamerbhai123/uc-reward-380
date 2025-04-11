@@ -65,3 +65,13 @@ input {
   background-color: green !important;
   color: white !important;
 }
+button.completed {
+  background-color: green;
+  color: white;
+  border: none;
+}
+button.completed {
+  background-color: green;
+  color: white;
+  border: none;
+}
