@@ -77,3 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// STEP 1 - Download Now button green after return
+const downloadBtn = document.getElementById("downloadBtn");
+
+if (localStorage.getItem("step1Completed")) {
+  downloadBtn.classList.add("completed");
+  downloadBtn.innerText = "Downloaded";
+}
+
+downloadBtn.addEventListener("click", function () {
+  localStorage.setItem("step1Completed", "true");
+  setTimeout(() => {
+    window.location.href = "https://rooter.sng.link/D46b2/p641?pcid=2085839952";
+  }, 500); // Give it time to store before redirect
+});
