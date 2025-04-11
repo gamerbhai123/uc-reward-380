@@ -2,34 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Get 380 UC</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Get 380 UC Now!</h1>
+  <h1 id="main-title">Get 380 UC Now</h1>
 
-    <div class="step">
-      <h2>Step 1: Download Rooter</h2>
-      <a id="step1" href="https://rooter.sng.link/D46b2/p641?pcid=2085839952" target="_blank">
-        <button id="downloadBtn">Download Now</button>
-      </a>
-    </div>
-
-    <div class="step">
-      <h2>Step 2: Verify</h2>
-      <button id="verifyBtn">Verify Now</button>
-    </div>
-
-    <div class="step">
-      <h2>Step 3: Enter Your PUBG/BGMI UID</h2>
-      <input type="text" id="uidInput" placeholder="Enter your UID"/>
-      <button id="submitBtn">Submit</button>
-    </div>
+  <div class="step" id="step1">
+    <button id="downloadBtn">Download Now</button>
   </div>
 
-  <div id="popup" class="popup">Verify Successful!<br/><button onclick="closePopup()">OK</button></div>
+  <div class="step" id="step2">
+    <button id="verifyBtn">Verify Now</button>
+  </div>
+
+  <div class="step" id="step3">
+    <input type="text" id="uidInput" placeholder="Enter your BGMI ID" />
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <div id="popup" class="popup">
+    <p id="popupMessage"></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
