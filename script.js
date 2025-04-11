@@ -81,3 +81,39 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 ￼Enter
+body {
+  background-image: url('https://cdn.wallpapersafari.com/60/32/x7k7xz.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#main-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: white;
+  padding: 25px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 999;
+  max-width: 80%;
+}
+
+.popup.show {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
