@@ -91,3 +91,16 @@ downloadBtn.addEventListener("click", function () {
     window.location.href = "https://rooter.sng.link/D46b2/p641?pcid=2085839952";
   }, 500); // Give it time to store before redirect
 });
+// ✅ FINAL POPUP TEXT IN ENGLISH
+const finalPopup = document.createElement("div");
+finalPopup.innerHTML = `
+  <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+              background: #fff; padding: 20px; border-radius: 10px; text-align: center;
+              box-shadow: 0 0 15px rgba(0,0,0,0.3); z-index: 9999;">
+    <p style="color: green; font-weight: bold;">UC will be sent to your ID within 5 hours.</p>
+  </div>
+`;
+document.body.appendChild(finalPopup);
+setTimeout(() => {
+  document.body.removeChild(finalPopup);
+}, 3000);
