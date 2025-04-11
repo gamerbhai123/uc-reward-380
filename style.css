@@ -61,3 +61,7 @@ input {
   z-index: 999;
 }
 ￼Enter
+.completed {
+  background-color: green !important;
+  color: white !important;
+}
