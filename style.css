@@ -80,3 +80,7 @@ button.completed {
   color: white;
   border: none;
 }
+.completed {
+    background-color: #4CAF50;
+    color: white;
+}
